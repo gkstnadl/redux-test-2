@@ -3,9 +3,9 @@ export const DELETE_TODO = "DELETE_TODO";
 export const SWITCH_TODO = "SWITCH_TODO";
 export const SET_DETAIL_TODO = "SET_DETAIL_TODO";
 
-export const addTodo = (title, body) => ({
+export const addTodo = (title, content) => ({
     type: ADD_TODO,
-    payload: { title, body }
+    payload: { title, content }
 });
 
 export const deleteTodo = id => ({

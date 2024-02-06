@@ -7,9 +7,9 @@ function Main() {
     <div>
       <h1>Todo List</h1>
       <TodoInput />
-      <h2>할 일</h2>
+      <h2>TodoList</h2>
       <TodoList isActive={true} />
-      <h2>완료한 일</h2>
+      <h2>DoneList</h2>
       <TodoList isActive={false} />
     </div>
   );

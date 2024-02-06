@@ -6,7 +6,7 @@ const initialState = [
   {
     id: shortid.generate(),
     title: "",
-    body: "",
+    content: "",
     isDone: false,
     detailTodo: null
   },

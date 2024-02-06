@@ -1,5 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import {
   deleteTodo,
   switchTodo,
@@ -8,6 +9,7 @@ import {
 
 function TodoItem({ todo }) {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const handleDelete = () => {
     dispatch(deleteTodo(todo.id));
@@ -19,6 +21,7 @@ function TodoItem({ todo }) {
 
   const handleDetails = () => {
     dispatch(setDetailTodo(todo));
+    navigate(`/${todo.id}`);
   };
 
   return (
