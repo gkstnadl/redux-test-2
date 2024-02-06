@@ -1,10 +1,10 @@
 import React from "react";
-import { useSelector, useDisPatch } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { deleteTodo } from "../redux/modules/actions";
 import { useNavigate } from "react-router-dom";
 
 function Detail() {
-  const disptach = useDisPatch();
+  const disptach = useDispatch();
   const detailTodo = useSelector((state) => state.detailTodo);
   const navigate = useNavigate();
 
